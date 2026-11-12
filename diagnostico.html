@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.rvknegocios.com.br/diagnostico">
+<link rel="icon" href="/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RVK Negócios">
+<meta property="og:title" content="Diagnóstico RVK · Nota da sua empresa em seis dimensões">
+<meta property="og:description" content="Dezoito perguntas, nota em caixa, margem, dívida, operação, gestão e digital e IA, com as prioridades de investigação. Gratuito.">
+<meta property="og:url" content="https://www.rvknegocios.com.br/diagnostico">
+<meta property="og:image" content="https://www.rvknegocios.com.br/og.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F2E24">
+<title>Diagnóstico RVK · Nota da sua empresa em seis dimensões</title>
+<meta name="description" content="Dezoito perguntas, nota em caixa, margem, dívida, operação, gestão e digital e IA, com as prioridades de investigação. Gratuito.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7FAF8}
+a{color:#1F8A5B}a:hover{color:#156B46}
+.opt:hover{border-color:#0F2E24 !important}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+</style>
+<style>:root{color-scheme:light} html{background:#FFFFFF} #app{min-height:100vh}</style>
+<script src="/morphdom.min.js"></script>
+<script src="/dc-lite.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<template id="dc-template">
+
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #0F2E24; background: #F7FAF8; min-height: 900px">
+<header style="background: #0F2E24; padding: 0 16px">
+<div style="max-width: 760px; margin: 0 auto; height: 64px; display: flex; align-items: center; justify-content: space-between">
+<a href="/" style="display: flex; align-items: baseline; gap: 10px; text-decoration: none"><span style="font-family: 'Manrope', system-ui, sans-serif; font-weight: 600; font-size: 20px; color: #FFFFFF">RVK Negócios</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #B8933F; letter-spacing: 1px">FUNDADA EM 2012</span></a>
+<span style="font-size: 13px; color: #B7C6BC">Confidencial · LGPD</span>
+</div>
+</header>
+
+<main style="max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; box-sizing: border-box">
+
+<sc-if value="{{isIntro}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 24px; background: #FFFFFF; border-radius: 8px; padding: 48px 40px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #1F8A5B">DIAGNÓSTICO RVK</p>
+<h1 style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-weight: 800; letter-spacing: -1px; font-size: clamp(32px, 4.4vw, 46px); line-height: 1.1">Onde a roda pega na sua empresa?</h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5C6B63">18 perguntas, cerca de 5 minutos. Você recebe na tela uma nota de 0 a 100 em caixa, margem, dívida, operação, gestão e maturidade digital, com as três prioridades que merecem investigação.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 16px; color: #3A4A42">
+<li>· Sem balanço, DRE ou qualquer documento</li>
+<li>· Nota calculada por regras fixas da metodologia RVK</li>
+<li>· É uma leitura preliminar: hipóteses, não sentenças</li>
+</ul>
+<div><button type="button" onClick="{{start}}" style="min-height: 52px; padding: 0 28px; background: #0F2E24; color: #FFFFFF; border: 0; border-radius: 4px; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer">Começar o diagnóstico</button></div>
+</div>
+</sc-if>
+
+<sc-if value="{{isQ}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 28px; background: #FFFFFF; border-radius: 8px; padding: 40px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 14px; color: #5C6B63"><span style="font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; color: #1F8A5B">{{dimLabel}}</span><span>{{progText}}</span></div>
+<div style="height: 6px; background: #EAF0EC; border-radius: 3px"><div style="height: 6px; width: {{progW}}; background: #0F2E24; border-radius: 3px"></div></div>
+</div>
+<h2 style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-weight: 800; letter-spacing: -1px; font-size: clamp(24px, 3vw, 32px); line-height: 1.25">{{qText}}</h2>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{opts}}" as="o" hint-placeholder-count="5">
+<button type="button" class="opt" onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
+</sc-for>
+</div>
+<div><button type="button" onClick="{{back}}" style="min-height: 44px; padding: 0 4px; background: transparent; border: 0; color: #5C6B63; font: inherit; font-size: 15px; cursor: pointer">← Voltar</button></div>
+</div>
+</sc-if>
+
+<sc-if value="{{isGate}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 24px; background: #FFFFFF; border-radius: 8px; padding: 40px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #1F8A5B">18 DE 18 RESPONDIDAS</p>
+<h2 style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-weight: 800; letter-spacing: -1px; font-size: clamp(28px, 3.6vw, 38px); line-height: 1.15">Seu resultado está pronto.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #5C6B63">Ele aparece nesta tela assim que você se identificar. Uma cópia completa, com as prioridades explicadas, vai para o seu e-mail.</p>
+<div class="grid2" data-gate="1">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3A4A42">Nome<input type="text" data-f="nome" style="min-height: 44px; padding: 0 12px; border: 1px solid #CFD9D2; border-radius: 4px; font: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3A4A42">E-mail corporativo<input type="email" data-f="email" style="min-height: 44px; padding: 0 12px; border: 1px solid #CFD9D2; border-radius: 4px; font: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3A4A42">WhatsApp<input type="tel" data-f="whats" style="min-height: 44px; padding: 0 12px; border: 1px solid #CFD9D2; border-radius: 4px; font: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3A4A42">Empresa<input type="text" data-f="empresa" style="min-height: 44px; padding: 0 12px; border: 1px solid #CFD9D2; border-radius: 4px; font: inherit"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3A4A42">Seu papel
+<select data-f="papel" style="min-height: 44px; padding: 0 12px; border: 1px solid #CFD9D2; border-radius: 4px; font: inherit; background: #FFFFFF"><option>Dono ou sócio</option><option>CEO ou diretor geral</option><option>Diretor financeiro</option><option>Conselheiro</option><option>Outro</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #3A4A42">Faturamento anual
+<select data-f="fat" style="min-height: 44px; padding: 0 12px; border: 1px solid #CFD9D2; border-radius: 4px; font: inherit; background: #FFFFFF"><option>Até R$ 12 milhões</option><option>R$ 12 a 30 milhões</option><option>R$ 30 a 60 milhões</option><option>R$ 60 a 100 milhões</option><option>R$ 100 a 200 milhões</option><option>Acima de R$ 200 milhões</option><option>Prefiro não informar</option></select></label>
+</div>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 1.5; color: #5C6B63"><input type="checkbox" data-f="ok" style="width: 18px; height: 18px; margin-top: 2px"><span>Autorizo a RVK Negócios a usar estes dados para enviar o relatório e entrar em contato, conforme a <a href="/privacidade" target="_blank" rel="noopener">Política de Privacidade</a>.</span></label>
+<sc-if value="{{gateErr}}"><p role="alert" style="margin: 0; padding: 10px 14px; border-radius: 8px; background: #FDECEA; color: #8A1F14; font-size: 14px">{{gateErr}}</p></sc-if>
+<div><button type="button" onClick="{{reveal}}" style="min-height: 52px; padding: 0 28px; background: #B8933F; color: #0F2E24; border: 0; border-radius: 4px; font: inherit; font-size: 16px; font-weight: 600; cursor: pointer">Ver meu resultado</button></div>
+</div>
+</sc-if>
+
+<sc-if value="{{isResult}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 24px; background: #0F2E24; color: #FFFFFF; border-radius: 8px; padding: 40px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 1.5px; color: #B7C6BC">SAÚDE EMPRESARIAL · LEITURA PRELIMINAR</p>
+<div style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap">
+<span style="font-family: 'Manrope', system-ui, sans-serif; font-size: 96px; line-height: 1">{{overall}}</span>
+<span style="font-size: 22px; color: #B7C6BC">/100</span>
+<span style="margin-left: auto; padding: 6px 14px; border-radius: 999px; background: #FFFFFF; color: {{overallColor}}; font-size: 14px; font-weight: 600">{{overallLabel}}</span>
+</div>
+<sc-if value="{{hasCrit}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 14px 16px; background: #3B1A17; border-radius: 4px; font-size: 15px; line-height: 1.5; color: #FFD2CC">Gatilho crítico: {{critText}} A média não deve esconder esse ponto.</p>
+</sc-if>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px; background: #FFFFFF; border-radius: 8px; padding: 32px 40px">
+<sc-for list="{{dims}}" as="d" hint-placeholder-count="5">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; justify-content: space-between; font-size: 15px"><span style="font-weight: 600">{{d.name}}</span><span style="font-family: 'JetBrains Mono', monospace; color: {{d.text}}">{{d.score}} · {{d.label}}</span></div>
+<div style="height: 10px; background: #EAF0EC; border-radius: 5px"><div style="height: 10px; width: {{d.w}}; background: {{d.bar}}; border-radius: 5px"></div></div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; background: #FFFFFF; border-radius: 8px; padding: 32px 40px">
+<h3 style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-weight: 400; font-size: 26px">Três prioridades de investigação</h3>
+<ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 16px; line-height: 1.55; color: #3A4A42">
+<sc-for list="{{prios}}" as="p" hint-placeholder-count="3"><li><strong style="font-weight: 600">{{p.name}}:</strong> {{p.text}}</li></sc-for>
+</ol>
+<p style="margin: 0; font-size: 13px; color: #5C6B63">Leitura feita sem documentos. Para confirmar, a próxima etapa olha DRE, caixa, estoque e dívida.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px; background: #FFFFFF; border-radius: 8px; padding: 32px 40px">
+<h3 style="margin: 0; font-family: 'Manrope', system-ui, sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px">Caminho sugerido</h3>
+<sc-for list="{{paths}}" as="pa" hint-placeholder-count="2">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid #E2E9E4; border-radius: 12px; background: #F7FAF8">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 1px; color: #1F8A5B">{{pa.tag}}</span>
+<strong style="font-size: 17px; font-weight: 800">{{pa.title}}</strong>
+<span style="font-size: 14px; line-height: 1.55; color: #3A4A42">{{pa.text}}</span>
+<span style="font-size: 13px; color: #5C6B63">{{pa.who}}</span>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; background: #FFFFFF; border: 2px solid #0F2E24; border-radius: 8px; padding: 28px 40px">
+<div style="display: flex; flex-direction: column; gap: 6px; max-width: 420px"><strong style="font-size: 18px; font-weight: 600">Validar esse resultado com a RVK</strong><span style="font-size: 15px; color: #5C6B63">Conversa executiva de 30 minutos, sem custo, para entender o contexto por trás da nota.</span></div>
+<a href="https://wa.me/5511976564498" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; background: #0F2E24; color: #FFFFFF; font-weight: 600; text-decoration: none; border-radius: 4px">Agendar conversa</a>
+</div>
+<div><button type="button" onClick="{{restart}}" style="min-height: 44px; background: transparent; border: 0; color: #5C6B63; font: inherit; font-size: 15px; cursor: pointer">Refazer o diagnóstico</button></div>
+</div>
+</sc-if>
+
+</main>
+</div>
+</template>
+<script type="text/x-dc" id="dc-logic">
+var LEADS_URL = 'https://script.google.com/macros/s/AKfycbxh43V1rMmgVoDG_1iEIYLKpCE3anHps9x9QYbntiOEhUy16ugD6fmX1QD63Z4B05e2/exec';
+function sendLead(p){ try { p.pagina = location.href.split('?')[0]; fetch(LEADS_URL, {method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(p), keepalive:true}); } catch (e) {} }
+var QS = [
+{d:'Caixa', t:'Você tem uma previsão de caixa para as próximas semanas e confia nela?', s:'pos'},
+{d:'Caixa', t:'A empresa usa crédito (conta garantida, antecipação, cheque especial) para pagar despesas recorrentes?', s:'neg', crit:true},
+{d:'Caixa', t:'O mês fecha sem surpresas de caixa?', s:'pos'},
+{d:'Margem', t:'Você conhece a margem real por produto, loja ou canal?', s:'pos'},
+{d:'Margem', t:'Os descontos seguem regra e alçada definidas?', s:'pos'},
+{d:'Margem', t:'A margem caiu nos últimos 12 meses sem explicação clara?', s:'neg'},
+{d:'Dívida', t:'A empresa precisa renovar dívidas para manter a operação?', s:'neg', crit:true},
+{d:'Dívida', t:'Os juros pesam a ponto de consumir boa parte do lucro operacional?', s:'neg'},
+{d:'Dívida', t:'Você sabe quanto da geração de caixa vai para pagar dívida?', s:'pos'},
+{d:'Operação', t:'O estoque cresce mais rápido do que as vendas?', s:'neg'},
+{d:'Operação', t:'Há gargalos ou ociosidade recorrentes na operação?', s:'neg'},
+{d:'Operação', t:'Produtividade e giro são acompanhados por indicadores?', s:'pos'},
+{d:'Gestão', t:'Os relatórios gerenciais orientam as decisões do mês?', s:'pos'},
+{d:'Gestão', t:'As decisões importantes dependem só do dono?', s:'neg'},
+{d:'Gestão', t:'Existem ritos de gestão com pauta, metas e responsáveis?', s:'pos'},
+{d:'Digital e IA', t:'A equipe gasta horas toda semana montando planilhas e relatórios à mão?', s:'neg'},
+{d:'Digital e IA', t:'Cobrança, conciliação bancária e fechamento do mês ainda são feitos manualmente?', s:'neg'},
+{d:'Digital e IA', t:'A empresa já usa automação ou inteligência artificial em alguma rotina?', s:'pos'}
+];
+var LABELS_POS = ['Sempre','Quase sempre','Às vezes','Raramente','Nunca'];
+var LABELS_NEG = ['Nunca','Raramente','Às vezes','Com frequência','Sempre'];
+var PTS = [100,75,50,25,0];
+var DIMS = ['Caixa','Margem','Dívida','Operação','Gestão','Digital e IA'];
+var PRIO = {
+'Caixa':'previsibilidade de caixa, uso de crédito para despesas correntes e prazos de recebimento e pagamento.',
+'Margem':'margem real por produto e canal, política de descontos e composição do CMV.',
+'Dívida':'perfil da dívida, custo financeiro e capacidade de pagamento com a geração de caixa.',
+'Operação':'giro de estoque, capital empatado e gargalos que travam a produtividade.',
+'Gestão':'qualidade dos relatórios, ritos de decisão e dependência do dono.',
+'Digital e IA':'horas gastas em tarefas manuais, rotinas que podem ser automatizadas e custo de retrabalho.'
+};
+function cls(v){
+if (v < 40) return {label:'crítico', text:'#B3261E', bar:'#C8473B'};
+if (v < 60) return {label:'atenção', text:'#A35A00', bar:'#D98A2B'};
+if (v < 75) return {label:'moderado', text:'#1F5F99', bar:'#4F8FCB'};
+return {label:'adequado', text:'#2F6B4F', bar:'#3E8A66'};
+}
+class Component extends DCLogic {
+constructor(p){ super(p); this.state = {step:'intro', i:0, ans:{}}; }
+renderVals() {
+var st = this.state, self = this;
+var q = QS[st.i];
+var labels = q.s === 'pos' ? LABELS_POS : LABELS_NEG;
+var opts = labels.map(function(l, k){
+var sel = st.ans[st.i] === PTS[k];
+return {
+label: l,
+style: 'min-height: 52px; padding: 0 18px; text-align: left; background: ' + (sel ? '#0F2E24' : '#FFFFFF') + '; color: ' + (sel ? '#FFFFFF' : '#0F2E24') + '; border: 1px solid ' + (sel ? '#0F2E24' : '#CFD9D2') + '; border-radius: 4px; font: inherit; font-size: 16px; cursor: pointer',
+pick: function(){
+var a = Object.assign({}, st.ans); a[st.i] = PTS[k];
+if (st.i < QS.length - 1) self.setState({ans:a, i: st.i + 1});
+else self.setState({ans:a, step:'gate'});
+}
+};
+});
+var dims = DIMS.map(function(name){
+var vals = []; QS.forEach(function(qq, idx){ if (qq.d === name && st.ans[idx] !== undefined) vals.push(st.ans[idx]); });
+var sc = vals.length ? Math.round(vals.reduce(function(x,y){return x+y;},0) / vals.length) : 0;
+var c = cls(sc);
+return {name:name, score:sc, w: sc + '%', label:c.label, text:c.text, bar:c.bar};
+});
+var overall = Math.round(dims.reduce(function(x,d){return x + d.score;},0) / dims.length);
+var oc = cls(overall);
+var crits = QS.map(function(qq, idx){ return qq.crit && st.ans[idx] !== undefined && st.ans[idx] <= 25 ? qq.d : null; }).filter(Boolean);
+var byName = {}; dims.forEach(function(d){ byName[d.name] = d.score; });
+var core = Math.min(byName['Caixa'], byName['Margem'], byName['Dívida'], byName['Operação'], byName['Gestão']);
+var paths = [];
+if (core < 60) paths.push({tag:'CONSULTORIA E CONSELHO', title:'Projeto de diagnóstico e reestruturação', text:'As notas de caixa, margem, dívida, operação ou gestão pedem uma leitura com os números na mesa e um plano de 24 meses.', who:'Lidera: Edélcio Fonseca'});
+if (byName['Digital e IA'] < 60) paths.push({tag:'EFICIÊNCIA COM IA', title:'Automatizar rotinas e reduzir custo', text:'Há horas de trabalho manual que podem ser automatizadas: relatórios, conciliação, cobrança e atendimento.', who:'Lidera: Murilo Marques'});
+if (byName['Caixa'] < 60 || byName['Gestão'] < 60) paths.push({tag:'BPO E OUTSOURCING', title:'Deixar a rotina financeira com a RVK', text:'A RVK pode absorver a rotina financeira e administrativa, com controles, relatório mensal e supervisão da diretoria.', who:'Lideram: Edélcio Fonseca e Marcia Rosso'});
+if (!paths.length) paths.push({tag:'CONSULTORIA E CONSELHO', title:'Conversa de conselho', text:'A empresa está bem estruturada. O próximo passo costuma ser estratégia de expansão, governança ou uma transação.', who:'Lidera: Edélcio Fonseca'});
+var prios = dims.slice().sort(function(a,b){return a.score - b.score;}).slice(0,3).map(function(d){ return {name:d.name, text:PRIO[d.name]}; });
+return {
+isIntro: st.step === 'intro', isQ: st.step === 'q', isGate: st.step === 'gate', isResult: st.step === 'result',
+start: function(){ self.setState({step:'q', i:0}); },
+back: function(){ if (st.i > 0) self.setState({i: st.i - 1}); else self.setState({step:'intro'}); },
+gateErr: st.gateErr || '',
+reveal: function(){
+var g = function(k){ return document.querySelector('[data-f="' + k + '"]'); };
+var nome = g('nome') ? g('nome').value.trim() : '', email = g('email') ? g('email').value.trim() : '', ok = g('ok') ? g('ok').checked : false;
+if (nome.length < 2) return self.setState({gateErr: 'Informe o seu nome.'});
+if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return self.setState({gateErr: 'Informe um e-mail válido para receber o relatório.'});
+if (!ok) return self.setState({gateErr: 'Marque a autorização para ver o resultado.'});
+var val = function(k){ return g(k) ? g(k).value.trim() : ''; };
+sendLead({origem:'Diagnóstico', nome:nome, email:email, whatsapp:val('whats'), empresa:val('empresa'), papel:val('papel'), faturamento:val('fat'),
+ nota: overall + ' · ' + dims.map(function(d){ return d.name + ' ' + d.score; }).join(' · '),
+ prioridades: prios.map(function(x){ return x.name; }).join(', '),
+ caminho: paths.map(function(x){ return x.title; }).join(' | '),
+ respostas: QS.map(function(qq, idx){ return (idx + 1) + ':' + (st.ans[idx] === undefined ? '-' : st.ans[idx]); }).join(' ')});
+self.setState({step:'result', gateErr:''});
+},
+restart: function(){ self.setState({step:'intro', i:0, ans:{}}); },
+dimLabel: q.d.toUpperCase(),
+progText: 'Pergunta ' + (st.i + 1) + ' de ' + QS.length,
+progW: Math.round(((st.i + 1) / QS.length) * 100) + '%',
+qText: q.t, opts: opts,
+dims: dims, overall: overall, overallLabel: oc.label.charAt(0).toUpperCase() + oc.label.slice(1), overallColor: oc.text,
+hasCrit: crits.length > 0,
+critText: crits.indexOf('Caixa') >= 0 ? 'uso frequente de crédito para despesas recorrentes.' : 'dependência de renovação de dívida para operar.',
+prios: prios, paths: paths
+};
+}
+}
+</script>
+<script>DCLite.mount();</script>
+</body>
+</html>
