@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curva ABC de venda × margem: ferramenta gratuita · RVK Negócios</title>
+<meta name="description" content="Cole sua lista de produtos e cruze a curva ABC de venda com a de margem. Descubra o que vende muito e ganha pouco. Grátis, direto no navegador.">
+<link rel="canonical" href="https://www.rvknegocios.com.br/ferramentas/curva-abc">
+<link rel="icon" href="/logo.jpg">
+<link rel="alternate" type="application/rss+xml" title="Artigos · RVK Negócios" href="https://www.rvknegocios.com.br/artigos/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RVK Negócios">
+<meta property="og:title" content="Curva ABC de venda × margem: ferramenta gratuita · RVK Negócios">
+<meta property="og:description" content="Cole sua lista de produtos e cruze a curva ABC de venda com a de margem. Descubra o que vende muito e ganha pouco. Grátis, direto no navegador.">
+<meta property="og:url" content="https://www.rvknegocios.com.br/ferramentas/curva-abc">
+<meta property="og:image" content="https://www.rvknegocios.com.br/og.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F2E24">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Curva ABC de venda × margem", "url": "https://www.rvknegocios.com.br/ferramentas/curva-abc", "applicationCategory": "BusinessApplication", "operatingSystem": "Navegador", "inLanguage": "pt-BR", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "provider": {"@type": "Organization", "name": "RVK Negócios", "url": "https://www.rvknegocios.com.br/"}}</script>
+<style>
+.wrap.wide{max-width:1120px}
+.tool{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;margin-top:8px}
+.panel{padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--soft);display:flex;flex-direction:column;gap:18px}
+.dark{padding:28px;border-radius:20px;background:var(--ink);color:#FFFFFF;display:flex;flex-direction:column;gap:18px;box-shadow:0 30px 80px rgba(15,46,36,.14)}
+.dark .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:#7DD3A8}
+.dark .big{font-weight:800;font-size:clamp(36px,4.4vw,54px);letter-spacing:-2px;line-height:1}
+.dark .mid{font-weight:800;font-size:30px;letter-spacing:-1px;line-height:1.1;color:#E3C77E}
+.dark p{margin:0;font-size:15px;line-height:1.6;color:#D7E4DC}
+.dark small{font-size:12px;color:#B7C6BC;line-height:1.5}
+.dark .sep{border-top:1px solid #2A5443;padding-top:16px;display:flex;flex-direction:column;gap:6px}
+label.f{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--text)}
+label.f input,label.f select{min-height:48px;padding:0 14px;border:1px solid #CFD9D2;border-radius:10px;font:inherit;font-size:17px;background:#FFFFFF;color:var(--ink)}
+label.f input[type=range]{padding:0;border:0;background:none;accent-color:#1F8A5B;min-height:32px}
+label.f small{font-weight:400;color:var(--muted);font-size:13px}
+.chipsel{display:flex;flex-wrap:wrap;gap:8px}
+.chipsel button{font:inherit;font-size:14px;font-weight:700;min-height:42px;padding:0 16px;border:1px solid #CFD9D2;border-radius:999px;background:#FFFFFF;color:var(--ink);cursor:pointer}
+.chipsel button.on{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);background:#FFFFFF}
+a.card:hover{border-color:#1F8A5B;box-shadow:0 14px 40px rgba(15,46,36,.08)}
+.card .tg{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--green)}
+.card .tg.soon{color:var(--muted)}
+.card b{font-size:19px;font-weight:800;letter-spacing:-.3px;line-height:1.3}
+.card span.d{font-size:15px;line-height:1.6;color:var(--muted)}
+.card .go{margin-top:auto;font-weight:800;color:var(--green)}
+.how{margin-top:40px}.how h2{font-size:22px;font-weight:800;letter-spacing:-.4px;margin:0 0 10px}
+.how p,.how li{font-size:16px;line-height:1.7;color:var(--text)}
+@media (max-width:900px){.tool{grid-template-columns:minmax(0,1fr)}}
+</style><style>
+.bol{margin-top:40px;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--soft);display:flex;flex-direction:column;gap:10px}
+.bol h2{margin:0;font-size:21px;font-weight:800;letter-spacing:-.3px}
+.bol p{margin:0;font-size:15px;line-height:1.6;color:var(--text)}
+.bolf{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.bolf input{flex:1 1 220px;min-height:48px;padding:0 14px;border:1px solid #CFD9D2;border-radius:10px;font:inherit;font-size:16px}
+.bolf button{min-height:48px;padding:0 20px;border:0;border-radius:10px;background:var(--ink);color:#FFFFFF;font:inherit;font-weight:800;cursor:pointer}
+.bol small{font-size:13px;color:var(--muted)}
+.bolmsg{color:var(--green)!important;font-weight:700}
+</style><style>
+.abc-in textarea{width:100%;min-height:230px;box-sizing:border-box;padding:14px;border:1px solid #CFD9D2;border-radius:12px;font:14px/1.5 'JetBrains Mono',monospace;background:#FFFFFF;color:var(--ink);resize:vertical}
+.abc-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.abc-bar .btn{cursor:pointer;background:#FFFFFF;font:inherit;font-size:14px;font-weight:700}
+.abc-bar .btn.solid{background:var(--ink);color:#FFFFFF}
+.abc-bar label.btn input{display:none}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:28px 0 8px}
+.kpi{padding:16px 18px;border-left:2px solid var(--gold);display:flex;flex-direction:column;gap:4px}
+.kpi b{font-size:22px;font-weight:800;letter-spacing:-.5px}.kpi span{font-size:13px;color:var(--muted)}
+.mx{display:grid;grid-template-columns:110px repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}
+.mx .h{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;padding:6px}
+.mx .c{border-radius:12px;padding:14px;min-height:92px;display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);cursor:pointer;text-align:left;font:inherit;background:#FFFFFF;color:var(--ink)}
+.mx .c b{font-size:24px;font-weight:800;letter-spacing:-.5px}.mx .c span{font-size:12px;line-height:1.4;color:var(--muted)}
+.mx .c.sel{outline:3px solid var(--green);outline-offset:1px}
+.mx .c.good{background:#E7F4EC;border-color:#BFE0CB}.mx .c.warn{background:#FBF3DF;border-color:#EEDCA8}.mx .c.bad{background:#FBE9E7;border-color:#F0C6C0}
+.alerts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:22px}
+.alert{padding:20px;border-radius:16px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.alert b{font-size:16px}.alert p{margin:0;font-size:14px;line-height:1.6;color:var(--text)}
+.alert .n{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px}
+.tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:14px}
+.tbl th{text-align:left;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.8px;color:var(--muted);padding:10px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;min-width:22px;text-align:center;padding:2px 7px;border-radius:999px;font-weight:800;font-size:12px}
+.pA{background:#1F8A5B;color:#FFFFFF}.pB{background:#E3C77E;color:#0F2E24}.pC{background:#E2E9E4;color:#3A4A42}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.err{color:#B42318;font-weight:700;font-size:14px}
+.priv{font-size:13px;color:var(--muted)}
+@media (max-width:700px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.mx{grid-template-columns:70px repeat(3,minmax(0,1fr))}.mx .c{padding:10px;min-height:80px}.mx .c span{display:none}.mx .c b{font-size:20px}}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ink:#0F2E24;--green:#1F8A5B;--gold:#B8933F;--muted:#5C6B63;--text:#3A4A42;--line:#E2E9E4;--soft:#F7FAF8}
+*{box-sizing:border-box}html{background:#FFFFFF}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#FFFFFF;-webkit-font-smoothing:antialiased}
+a{color:var(--green)}a:hover{color:#156B46}
+.wrap{max-width:760px;margin:0 auto;padding:0 32px}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{max-width:1200px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand img{width:44px;height:44px;border-radius:9px;object-fit:cover}
+.brand b{font-weight:800;font-size:18px;letter-spacing:-.4px}
+.brand small{display:block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.4px;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #CFD9D2;border-radius:10px;color:var(--ink);font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.btn.solid{background:var(--ink);border-color:var(--ink);color:#FFFFFF}.btn.solid:hover{color:#FFFFFF;background:#163F32}
+main{padding:64px 0 96px}
+.eyebrow{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.4px;color:var(--green);display:flex;gap:14px;flex-wrap:wrap}
+.eyebrow span+span{color:var(--muted)}
+h1{margin:0 0 18px;font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.08;letter-spacing:-1.2px;text-wrap:balance}
+.by{display:flex;align-items:center;gap:12px;margin:0 0 40px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.by img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.by b{display:block;font-size:15px}.by small{font-size:13px;color:var(--muted)}
+article h2{margin:40px 0 12px;font-weight:800;font-size:22px;letter-spacing:-.4px;line-height:1.25}
+article p,article li{font-size:18px;line-height:1.75;color:var(--text)}
+article p{margin:0 0 18px}
+article ul{margin:0 0 20px;padding-left:22px}article li{margin-bottom:8px}
+article strong{color:var(--ink)}
+blockquote{margin:24px 0;padding:6px 0 6px 22px;border-left:3px solid var(--gold);font-size:20px;line-height:1.6;font-weight:600;color:var(--ink)}
+.orig{margin:36px 0 0;font-size:14px;color:var(--muted)}
+.cta{margin-top:48px;padding:30px;border-radius:20px;background:var(--ink);color:#FFFFFF}
+.cta h2{margin:0 0 8px;font-weight:800;font-size:22px;color:#FFFFFF}
+.cta p{margin:0 0 18px;font-size:16px;line-height:1.65;color:#C9D8CF}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap}
+.cta .btn{border-color:#3C5C50;color:#FFFFFF}.cta .btn.gold{background:#E3C77E;border-color:#E3C77E;color:var(--ink)}
+.more{margin-top:56px}
+.label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--muted);margin:0 0 6px}
+.list{border-top:1px solid var(--line)}
+.list a{display:flex;gap:18px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.list a:hover strong{color:var(--green)}
+.list time{flex:none;width:92px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A9A91}
+.list strong{display:block;font-size:17px;font-weight:700;line-height:1.4}
+.list span.r{display:block;margin-top:4px;font-size:14px;line-height:1.55;color:var(--muted)}
+.list i{font-style:normal;color:var(--green);font-weight:800}
+.lead{margin:0 0 36px;font-size:18px;line-height:1.7;color:var(--text)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.chips button{font:inherit;font-size:13px;font-weight:700;min-height:38px;padding:0 14px;border:1px solid #CFD9D2;border-radius:999px;background:#FFFFFF;color:var(--ink);cursor:pointer}
+.chips button.on{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.rss{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:700;text-decoration:none}
+footer{padding:28px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer .wrap{max-width:1200px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--text)}
+@media (max-width:640px){.wrap{padding:0 16px}.brand small{display:none}main{padding:36px 0 72px}.hide-m{display:none}article p,article li{font-size:17px}.list a{flex-direction:column;gap:4px}.list i{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="/"><img src="/logo.jpg" alt="RVK Negócios"><span><b>RVK Negócios</b><small>GESTÃO · ESTRATÉGIA · M&amp;A</small></span></a>
+<nav><a class="btn hide-m" href="/artigos">Artigos</a><a class="btn hide-m" href="/ferramentas">Ferramentas</a><a class="btn solid" href="/diagnostico">Diagnóstico gratuito</a></nav>
+</div></header>
+<main><div class="wrap wide">
+<p class="eyebrow"><span><a href="/ferramentas" style="color:inherit;text-decoration:none">FERRAMENTAS GRATUITAS</a></span><span>RAIO-X · NOVO</span></p>
+<h1>Curva ABC de venda × margem</h1>
+<p class="lead">A curva ABC comum mostra o que mais vende. Esta cruza a venda com a margem e mostra o que realmente sustenta o lucro, o que vende muito e ganha pouco, e o que só ocupa espaço no estoque.</p>
+<div class="panel abc-in">
+<div style="display:flex;flex-direction:column;gap:6px"><b style="font-size:17px">1. Cole a sua lista de produtos</b>
+<span style="font-size:14px;line-height:1.6;color:var(--muted)">Copie do Excel ou do sistema três colunas, nesta ordem: <b>produto</b>, <b>venda no período (R$)</b> e <b>margem no período (R$)</b>, que é a venda menos o custo da mercadoria. Se tiver o custo em vez da margem, troque a opção abaixo. A primeira linha pode ser o cabeçalho.</span></div>
+<textarea id="data" spellcheck="false" aria-label="Lista de produtos"></textarea>
+<div class="abc-bar">
+<label class="f" style="flex-direction:row;align-items:center;gap:8px;font-size:14px">Terceira coluna:<select id="modo" style="min-height:42px;font-size:14px"><option value="margem">Margem (R$)</option><option value="custo">Custo (R$)</option></select></label>
+<button type="button" class="btn solid" id="go">Gerar a curva</button>
+<label class="btn">Importar CSV<input type="file" id="file" accept=".csv,.txt,text/csv,text/plain"></label>
+<button type="button" class="btn" id="ex">Usar exemplo</button>
+<button type="button" class="btn" id="clr">Limpar</button>
+</div>
+<span class="err" id="err" role="alert"></span>
+<span class="priv">Os dados ficam só no seu navegador. Nada é enviado para a RVK.</span>
+</div>
+<div id="out" hidden>
+<div class="kpis">
+<div class="kpi"><b id="k1"></b><span>itens analisados</span></div>
+<div class="kpi"><b id="k2"></b><span>venda no período</span></div>
+<div class="kpi"><b id="k3"></b><span>margem no período</span></div>
+<div class="kpi"><b id="k4"></b><span>margem média sobre a venda</span></div>
+</div>
+<section class="how" style="margin-top:28px"><h2>2. A matriz venda × margem</h2>
+<p style="margin:0">Linhas: classe na curva de venda. Colunas: classe na curva de margem. A = itens que somam os primeiros 80%, B = os 15% seguintes, C = os últimos 5%. Clique num quadro para ver os itens.</p></section>
+<div class="mx" id="mx"></div>
+<div class="alerts" id="alerts"></div>
+<section class="how"><h2 id="tt">3. Itens</h2>
+<div class="abc-bar" style="margin-top:6px"><button type="button" class="btn" id="all">Mostrar todos</button><button type="button" class="btn" id="csv">Baixar resultado (CSV)</button></div>
+<div class="tblwrap"><table class="tbl"><thead><tr><th>PRODUTO</th><th style="text-align:right">VENDA</th><th style="text-align:right">% ACUM.</th><th>ABC VENDA</th><th style="text-align:right">MARGEM</th><th style="text-align:right">MARGEM %</th><th>ABC MARGEM</th></tr></thead><tbody id="tb"></tbody></table></div>
+</section>
+</div>
+<section class="how"><h2>Por que cruzar venda com margem</h2>
+<p>Em muitas empresas, uma pequena parte do catálogo sustenta quase toda a margem, enquanto itens campeões de venda deixam pouco ou nada. Quem olha só a curva de venda reforça estoque, vitrine e desconto justamente nos produtos que menos contribuem.</p>
+<ul>
+<li><b>A em venda e A em margem:</b> sustentam o resultado. Ruptura aqui custa caro.</li>
+<li><b>A em venda e C em margem:</b> giram muito e ganham pouco. Revise preço, custo de compra e desconto.</li>
+<li><b>C em venda e A em margem:</b> pouco giro e boa margem. Pode valer mais exposição.</li>
+<li><b>C em venda e C em margem:</b> candidatos a sair do mix e liberar <a href="/ferramentas/estoque">caixa preso no estoque</a>.</li>
+</ul></section>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var EX='Produto\tVenda (R$)\tMargem (R$)\nLinha básica camiseta\t1850000\t70000\nTênis corrida premium\t1420000\t610000\nCalça jeans tradicional\t1180000\t410000\nJaqueta couro\t960000\t430000\nMeia kit 3 pares\t720000\t28000\nVestido festa\t540000\t260000\nBolsa média\t410000\t205000\nBermuda praia\t380000\t60000\nCinto couro\t260000\t140000\nBoné básico\t190000\t22000\nCachecol lã\t120000\t61000\nÓculos de sol\t95000\t52000\nCarteira slim\t70000\t9000\nChaveiro\t30000\t-4000\nGuarda-chuva\t22000\t3000';
+function num(s){s=String(s||'').trim().replace(/R\$|\s|"/g,'');if(!s)return NaN;var neg=/^\(.*\)$/.test(s)||/^-/.test(s);s=s.replace(/[()\-]/g,'');
+if(s.indexOf(',')>-1&&s.indexOf('.')>-1){s=s.lastIndexOf(',')>s.lastIndexOf('.')?s.replace(/\./g,'').replace(',','.'):s.replace(/,/g,'')}
+else if(s.indexOf(',')>-1){s=/,\d{3}$/.test(s)&&!/,\d{1,2}$/.test(s)&&s.split(',').length>2?s.replace(/,/g,''):s.replace(',','.')}
+else if(/^\d{1,3}(\.\d{3})+$/.test(s)){s=s.replace(/\./g,'')}
+var v=parseFloat(s);return isNaN(v)?NaN:(neg?-v:v)}
+function split(l){if(l.indexOf('\t')>-1)return l.split('\t');if(l.indexOf(';')>-1)return l.split(';');var out=[],cur='',q=false;for(var i=0;i<l.length;i++){var ch=l[i];if(ch=='"'){q=!q;continue}if(ch==','&&!q){out.push(cur);cur='';continue}cur+=ch}out.push(cur);return out}
+function parse(t){var rows=[],bad=0;t.split(/\r?\n/).forEach(function(l){if(!l.trim())return;var c=split(l);if(c.length<3){bad++;return}var nome=c[0].trim(),v=num(c[1]),m=num(c[2]);if(isNaN(v)||isNaN(m)){if(rows.length===0&&bad===0){return}bad++;return}rows.push({nome:nome||'(sem nome)',venda:v,m3:m})});return {rows:rows,bad:bad}}
+function classify(rows,key){var s=rows.slice().sort(function(a,b){return b[key]-a[key]});var tot=s.reduce(function(a,r){return a+Math.max(0,r[key])},0);var acc=0;
+s.forEach(function(r){var v=Math.max(0,r[key]);var before=tot?acc/tot:1;acc+=v;r[key+'Acc']=tot?acc/tot:1;r[key+'C']=v<=0?'C':(before<0.8?'A':(before<0.95?'B':'C'))})}
+var brl=function(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0})};
+var pct=function(v){return (v*100).toLocaleString('pt-BR',{maximumFractionDigits:1})+'%'};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var R=[],filt=null;
+var TONE={AA:'good',AB:'good',BA:'good',CA:'good',AC:'bad',BC:'warn',CC:'bad',BB:'',CB:''};
+var NOTE={AA:'sustentam o resultado',AB:'vendem muito, margem média',AC:'vendem muito, ganham pouco',BA:'giro médio, boa margem',BB:'meio da tabela',BC:'giro médio, margem fraca',CA:'pouco giro, boa margem',CB:'pouco giro, margem média',CC:'candidatos a sair do mix'};
+function run(){$('err').textContent='';var p=parse($('data').value);var modo=$('modo').value;
+if(p.rows.length<3){$('err').textContent='Preciso de pelo menos 3 produtos com venda e '+(modo==='custo'?'custo':'margem')+' numéricos. Confira se são três colunas.';$('out').hidden=true;return}
+R=p.rows.map(function(r){var m=modo==='custo'?r.venda-r.m3:r.m3;return {nome:r.nome,venda:r.venda,margem:m}});
+classify(R,'venda');classify(R,'margem');R.sort(function(a,b){return b.venda-a.venda});
+var tv=R.reduce(function(a,r){return a+r.venda},0),tm=R.reduce(function(a,r){return a+r.margem},0);
+$('k1').textContent=R.length.toLocaleString('pt-BR');$('k2').textContent=brl(tv);$('k3').textContent=brl(tm);$('k4').textContent=tv?pct(tm/tv):'—';
+var mx='<div class="h"></div><div class="h">MARGEM A</div><div class="h">MARGEM B</div><div class="h">MARGEM C</div>';
+['A','B','C'].forEach(function(v){mx+='<div class="h">VENDA '+v+'</div>';['A','B','C'].forEach(function(m){var k=v+m,its=R.filter(function(r){return r.vendaC===v&&r.margemC===m}),sv=its.reduce(function(a,r){return a+r.venda},0);
+mx+='<button type="button" class="c '+(TONE[k]||'')+(filt===k?' sel':'')+'" data-k="'+k+'"><b>'+its.length+'</b><span>'+NOTE[k]+'</span><span>'+(tv?pct(sv/tv):'0%')+' da venda</span></button>'})});
+$('mx').innerHTML=mx;$('mx').querySelectorAll('.c').forEach(function(b){b.onclick=function(){filt=filt===b.dataset.k?null:b.dataset.k;run()}});
+var g=function(k){return R.filter(function(r){return r.vendaC+r.margemC===k})};
+var ac=g('AC').concat(g('BC').filter(function(r){return r.vendaC==='B'})),cc=g('CC'),ca=g('CA'),neg=R.filter(function(r){return r.margem<0});
+var lucroA=R.filter(function(r){return r.margemC==='A'});var cnt=function(a){return a.length+' '+(a.length===1?'item':'itens')};
+var al='';
+al+='<div class="alert" style="background:#E7F4EC;border-color:#BFE0CB"><span class="n">O QUE SUSTENTA O LUCRO</span><b>'+cnt(lucroA)+(lucroA.length===1?' faz':' fazem')+' 80% da margem</b><p>São '+pct(lucroA.length/R.length)+' do catálogo. Ruptura, preço errado ou falta de exposição nesses itens pesa direto no resultado.</p></div>';
+if(ac.length)al+='<div class="alert" style="background:#FBE9E7;border-color:#F0C6C0"><span class="n">VENDE MUITO, GANHA POUCO</span><b>'+cnt(ac)+': '+esc(ac.slice(0,3).map(function(r){return r.nome}).join(', '))+(ac.length>3?'…':'')+'</b><p>Respondem por '+pct(ac.reduce(function(a,r){return a+r.venda},0)/tv)+' da venda e só '+pct(Math.max(0,ac.reduce(function(a,r){return a+r.margem},0))/Math.max(1,tm))+' da margem. Revise preço, custo de compra e política de desconto antes de reforçar estoque.</p></div>';
+if(neg.length)al+='<div class="alert" style="background:#FBE9E7;border-color:#F0C6C0"><span class="n">MARGEM NEGATIVA</span><b>'+cnt(neg)+(neg.length===1?' vende':' vendem')+' abaixo do custo</b><p>'+esc(neg.slice(0,3).map(function(r){return r.nome}).join(', '))+(neg.length>3?'…':'')+'. Cada venda aumenta o prejuízo, a não ser que o item puxe outra compra de forma comprovada.</p></div>';
+if(ca.length)al+='<div class="alert" style="background:#FBF3DF;border-color:#EEDCA8"><span class="n">POUCO GIRO, BOA MARGEM</span><b>'+cnt(ca)+' com espaço para crescer</b><p>'+esc(ca.slice(0,3).map(function(r){return r.nome}).join(', '))+(ca.length>3?'…':'')+'. Mais exposição e equipe orientada podem aumentar a margem sem desconto.</p></div>';
+if(cc.length)al+='<div class="alert"><span class="n">CANDIDATOS A SAIR DO MIX</span><b>'+cnt(cc)+' em C nas duas curvas</b><p>Somam '+pct(cc.reduce(function(a,r){return a+r.venda},0)/tv)+' da venda. Antes de recomprar, avalie se vale manter o estoque parado nesses itens.</p></div>';
+$('alerts').innerHTML=al;
+var rows=filt?R.filter(function(r){return r.vendaC+r.margemC===filt}):R;$('tt').textContent=filt?'3. Itens em venda '+filt[0]+' × margem '+filt[1]+' ('+rows.length+')':'3. Itens ('+R.length+')';$('all').hidden=!filt;
+$('tb').innerHTML=rows.map(function(r){return '<tr><td>'+esc(r.nome)+'</td><td class="n">'+brl(r.venda)+'</td><td class="n">'+pct(r.vendaAcc)+'</td><td><span class="pill p'+r.vendaC+'">'+r.vendaC+'</span></td><td class="n">'+brl(r.margem)+'</td><td class="n">'+(r.venda?pct(r.margem/r.venda):'—')+'</td><td><span class="pill p'+r.margemC+'">'+r.margemC+'</span></td></tr>'}).join('');
+$('out').hidden=false}
+$('go').onclick=function(){filt=null;run();$('out').scrollIntoView({behavior:'smooth',block:'start'})};
+$('ex').onclick=function(){$('data').value=EX;$('modo').value='margem';filt=null;run()};
+$('clr').onclick=function(){$('data').value='';$('out').hidden=true;$('err').textContent=''};
+$('all').onclick=function(){filt=null;run()};
+$('file').onchange=function(e){var f=e.target.files[0];if(!f)return;var rd=new FileReader();rd.onload=function(){$('data').value=rd.result;filt=null;run()};rd.readAsText(f)};
+$('csv').onclick=function(){var l=['Produto;Venda;% acumulado venda;ABC venda;Margem;Margem %;ABC margem'].concat(R.map(function(r){return ['"'+r.nome.replace(/"/g,'""')+'"',r.venda.toFixed(2).replace('.',','),(r.vendaAcc*100).toFixed(1).replace('.',','),r.vendaC,r.margem.toFixed(2).replace('.',','),r.venda?(r.margem/r.venda*100).toFixed(1).replace('.',','):'',r.margemC].join(';')}));
+var b=new Blob(['\ufeff'+l.join('\n')],{type:'text/csv;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='curva-abc-venda-margem.csv';document.body.appendChild(a);a.click();a.remove()};
+$('data').placeholder=EX;
+})();
+</script>
+<div class="cta">
+<h2>Os números apontam um problema. E agora?</h2>
+<p>O diagnóstico da RVK leva cerca de 5 minutos e devolve uma nota em seis dimensões, com as prioridades de investigação. Se preferir, a conversa com o nosso time é reservada.</p>
+<div class="row"><a class="btn gold" href="/diagnostico">Fazer o diagnóstico</a><a class="btn" href="https://wa.me/5511976564498?text=Ol%C3%A1%2C%20vim%20pelas%20ferramentas%20do%20site%20da%20RVK%20Neg%C3%B3cios." target="_blank" rel="noopener">Falar no WhatsApp</a></div>
+</div>
+<div class="bol">
+<p class="label">BOLETIM RVK</p>
+<h2>Receba o Boletim RVK no seu e-mail</h2>
+<p>Uma leitura curta, de segunda a sexta, sobre gestão, reestruturação, varejo e IA. Às sextas, edição cultural.</p>
+<form class="bolf" onsubmit="return rvkBoletim(this)">
+<input type="email" name="email" required placeholder="seu@email.com.br" aria-label="E-mail">
+<button type="submit">Quero receber</button>
+</form>
+<small class="bolmsg" role="status"></small>
+<small>Ao assinar, você concorda com a <a href="/privacidade">política de privacidade</a>.</small>
+</div>
+<script>
+var RVK_LEADS='https://script.google.com/macros/s/AKfycbxh43V1rMmgVoDG_1iEIYLKpCE3anHps9x9QYbntiOEhUy16ugD6fmX1QD63Z4B05e2/exec';
+function rvkLead(p){try{p.pagina=location.href.split('?')[0];fetch(RVK_LEADS,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(p),keepalive:true})}catch(e){}}
+function rvkBoletim(f){var e=f.email.value.trim();var m=f.parentNode.querySelector('.bolmsg');if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){m.textContent='Confira o e-mail.';return false}rvkLead({origem:'Boletim',email:e});f.reset();m.textContent='Pronto. Você vai receber o próximo Boletim RVK no seu e-mail.';return false}
+</script>
+<section class="more"><p class="label">OUTRAS FERRAMENTAS</p><div class="cards"><a class="card" href="/ferramentas/estoque"><span class="tg">CALCULADORA</span><b>Quanto caixa está preso no seu estoque?</b><span class="d">Informe o faturamento e os dias de estoque que dá para cortar. Veja o caixa que volta para a empresa.</span><span class="go">Abrir →</span></a><a class="card" href="/ferramentas/ciclo-financeiro"><span class="tg">CALCULADORA</span><b>Ciclo financeiro e capital de giro</b><span class="d">Quantos dias o dinheiro fica preso entre pagar o fornecedor e receber do cliente, e quanto capital isso exige.</span><span class="go">Abrir →</span></a></div></section>
+</div></main>
+<footer><div class="wrap">
+<span>RVK Negócios é marca de Ravick Gestão Empresarial Ltda. · CNPJ 15.224.203/0001-39 · fundada em 2012 · São Paulo</span>
+<span><a href="/artigos/feed.xml">RSS</a> · <a href="/privacidade">Privacidade</a> · <a href="/">Voltar ao site</a></span>
+</div></footer>
+</body>
+</html>
