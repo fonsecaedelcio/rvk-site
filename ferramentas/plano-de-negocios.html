@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plano de negócios guiado: modelo gratuito com DRE projetada · RVK Negócios</title>
-<meta name="description" content="Monte seu plano de negócios em oito etapas: investimento, DRE projetada de três anos, ponto de equilíbrio, necessidade de caixa e parecer. Gratuito, salva no navegador.">
+<meta name="description" content="Monte seu plano de negócios em oito etapas: investimento, DRE projetada de três anos, ponto de equilíbrio, necessidade de caixa e pontos de atenção. Gratuito, salva no navegador.">
 <link rel="canonical" href="https://www.rvknegocios.com.br/ferramentas/plano-de-negocios">
 <link rel="icon" href="/logo.jpg">
 <link rel="alternate" type="application/rss+xml" title="Artigos · RVK Negócios" href="https://www.rvknegocios.com.br/artigos/feed.xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RVK Negócios">
 <meta property="og:title" content="Plano de negócios guiado: modelo gratuito com DRE projetada · RVK Negócios">
-<meta property="og:description" content="Monte seu plano de negócios em oito etapas: investimento, DRE projetada de três anos, ponto de equilíbrio, necessidade de caixa e parecer. Gratuito, salva no navegador.">
+<meta property="og:description" content="Monte seu plano de negócios em oito etapas: investimento, DRE projetada de três anos, ponto de equilíbrio, necessidade de caixa e pontos de atenção. Gratuito, salva no navegador.">
 <meta property="og:url" content="https://www.rvknegocios.com.br/ferramentas/plano-de-negocios">
 <meta property="og:image" content="https://www.rvknegocios.com.br/og.jpg">
 <meta property="og:locale" content="pt_BR">
@@ -160,7 +160,7 @@ footer a{color:var(--text)}
 <main><div class="wrap wide">
 <p class="eyebrow"><span><a href="/ferramentas" style="color:inherit;text-decoration:none">FERRAMENTAS GRATUITAS</a></span><span>PLANO GUIADO · NOVO</span></p>
 <h1>Plano de negócios guiado</h1>
-<p class="lead">Oito etapas com perguntas objetivas. No fim, o plano sai pronto: resumo do negócio, investimento, DRE projetada para três anos, ponto de equilíbrio, necessidade de caixa e um parecer com os pontos de atenção. Seus dados ficam só neste navegador e são salvos automaticamente.</p>
+<p class="lead">Oito etapas com perguntas objetivas. No fim, o plano sai pronto: resumo do negócio, investimento, DRE projetada para três anos, ponto de equilíbrio, necessidade de caixa e os pontos de atenção. Seus dados ficam só neste navegador e são salvos automaticamente.</p>
 <div class="pn-steps" id="pn-steps"></div>
 <div id="pn-form"></div>
 <div id="pn-out" hidden></div>
@@ -269,7 +269,7 @@ function out(){var c=calc(),y=c.Y;
  var h='<div class="pn-doc">'+
  '<div><span class="label">PLANO DE NEGÓCIOS</span><h2 style="font-size:30px">'+esc(D.nome||'Seu negócio')+'</h2><p style="margin:0;color:var(--muted)">'+esc([D.setor,D.cidade,D.inicio&&('início: '+D.inicio)].filter(Boolean).join(' · '))+'</p></div>'+
  '<div class="pn-kp"><div><b>'+brl(c.inv)+'</b><span>investimento inicial</span></div><div><b>'+brl(y[0].rec)+'</b><span>receita no 1º ano</span></div><div><b>'+(isFinite(c.peq)?brl(c.peq):'—')+'</b><span>ponto de equilíbrio por mês</span></div><div><b>'+(c.pay?c.pay+' meses':'acima de 36 meses')+'</b><span>retorno do investimento</span></div></div>'+
- '<div class="pn-par"><span class="k">PARECER</span><h2>O que os números dizem</h2><ul>'+parecer(c).map(function(t){return '<li>'+t+'</li>'}).join('')+'</ul><p style="margin:0;font-size:13px;color:#B7C6BC">Leitura automática a partir das premissas informadas. Não substitui a análise de um especialista.</p></div>'+
+ '<div class="pn-par"><span class="k">PONTOS DE ATENÇÃO</span><h2>O que os números sinalizam</h2><ul>'+parecer(c).map(function(t){return '<li>'+t+'</li>'}).join('')+'</ul><p style="margin:0;font-size:13px;color:#B7C6BC">Leitura automática a partir das premissas informadas. O relatório de avaliação do plano é feito por um consultor RVK e faz parte do serviço de avaliação.</p></div>'+
  '<section><h2>1. O negócio</h2>'+txt('desc','O que faz')+txt('problema','Problema que resolve')+txt('produto','Produto ou serviço principal')+'</section>'+
  '<section><h2>2. Mercado</h2>'+(txt('cliente','Cliente')+txt('concorrentes','Concorrência')+txt('diferencial','Diferencial')+txt('canais','Canais de venda')||'<p style="color:var(--muted)">Etapa ainda não preenchida. Um banco ou investidor vai querer ver cliente, concorrência e diferencial.</p>')+'</section>'+
  '<section><h2>3. Operação</h2>'+txt('socios','Sócios')+txt('ponto','Onde opera')+'<p><b>Equipe</b><br>'+n('func')+' funcionários, custo de pessoal de '+brl(c.folha)+' por mês com pró-labore.</p></section>'+
