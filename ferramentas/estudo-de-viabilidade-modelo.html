@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudo de viabilidade e localização: modelo · RVK Negócios</title>
+<meta name="description" content="Exemplo do estudo de viabilidade e localização da RVK Negócios: concorrência num raio de 3 km, avaliações, setor, riscos, time ideal e plano de lançamento.">
+<link rel="canonical" href="https://www.rvknegocios.com.br/ferramentas/estudo-de-viabilidade-modelo">
+<link rel="icon" href="/logo.jpg">
+<link rel="alternate" type="application/rss+xml" title="Artigos · RVK Negócios" href="https://www.rvknegocios.com.br/artigos/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RVK Negócios">
+<meta property="og:title" content="Estudo de viabilidade e localização: modelo · RVK Negócios">
+<meta property="og:description" content="Exemplo do estudo de viabilidade e localização da RVK Negócios: concorrência num raio de 3 km, avaliações, setor, riscos, time ideal e plano de lançamento.">
+<meta property="og:url" content="https://www.rvknegocios.com.br/ferramentas/estudo-de-viabilidade-modelo">
+<meta property="og:image" content="https://www.rvknegocios.com.br/og.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F2E24">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Estudo de viabilidade e localização: modelo", "url": "https://www.rvknegocios.com.br/ferramentas/estudo-de-viabilidade-modelo", "applicationCategory": "BusinessApplication", "operatingSystem": "Navegador", "inLanguage": "pt-BR", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "provider": {"@type": "Organization", "name": "RVK Negócios", "url": "https://www.rvknegocios.com.br/"}}</script>
+<style>
+.wrap.wide{max-width:1120px}
+.tool{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:start;margin-top:8px}
+.panel{padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--soft);display:flex;flex-direction:column;gap:18px}
+.dark{padding:28px;border-radius:20px;background:var(--ink);color:#FFFFFF;display:flex;flex-direction:column;gap:18px;box-shadow:0 30px 80px rgba(15,46,36,.14)}
+.dark .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:#7DD3A8}
+.dark .big{font-weight:800;font-size:clamp(36px,4.4vw,54px);letter-spacing:-2px;line-height:1}
+.dark .mid{font-weight:800;font-size:30px;letter-spacing:-1px;line-height:1.1;color:#E3C77E}
+.dark p{margin:0;font-size:15px;line-height:1.6;color:#D7E4DC}
+.dark small{font-size:12px;color:#B7C6BC;line-height:1.5}
+.dark .sep{border-top:1px solid #2A5443;padding-top:16px;display:flex;flex-direction:column;gap:6px}
+label.f{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:var(--text)}
+label.f input,label.f select{min-height:48px;padding:0 14px;border:1px solid #CFD9D2;border-radius:10px;font:inherit;font-size:17px;background:#FFFFFF;color:var(--ink)}
+label.f input[type=range]{padding:0;border:0;background:none;accent-color:#1F8A5B;min-height:32px}
+label.f small{font-weight:400;color:var(--muted);font-size:13px}
+.chipsel{display:flex;flex-wrap:wrap;gap:8px}
+.chipsel button{font:inherit;font-size:14px;font-weight:700;min-height:42px;padding:0 16px;border:1px solid #CFD9D2;border-radius:999px;background:#FFFFFF;color:var(--ink);cursor:pointer}
+.chipsel button.on{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;gap:10px;padding:24px;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);background:#FFFFFF}
+a.card:hover{border-color:#1F8A5B;box-shadow:0 14px 40px rgba(15,46,36,.08)}
+.card .tg{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--green)}
+.card .tg.soon{color:var(--muted)}
+.card b{font-size:19px;font-weight:800;letter-spacing:-.3px;line-height:1.3}
+.card span.d{font-size:15px;line-height:1.6;color:var(--muted)}
+.card .go{margin-top:auto;font-weight:800;color:var(--green)}
+.how{margin-top:40px}.how h2{font-size:22px;font-weight:800;letter-spacing:-.4px;margin:0 0 10px}
+.how p,.how li{font-size:16px;line-height:1.7;color:var(--text)}
+@media (max-width:900px){.tool{grid-template-columns:minmax(0,1fr)}}
+</style><style>
+.bol{margin-top:40px;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--soft);display:flex;flex-direction:column;gap:10px}
+.bol h2{margin:0;font-size:21px;font-weight:800;letter-spacing:-.3px}
+.bol p{margin:0;font-size:15px;line-height:1.6;color:var(--text)}
+.bolf{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.bolf input{flex:1 1 220px;min-height:48px;padding:0 14px;border:1px solid #CFD9D2;border-radius:10px;font:inherit;font-size:16px}
+.bolf button{min-height:48px;padding:0 20px;border:0;border-radius:10px;background:var(--ink);color:#FFFFFF;font:inherit;font-weight:800;cursor:pointer}
+.bol small{font-size:13px;color:var(--muted)}
+.bolmsg{color:var(--green)!important;font-weight:700}
+</style><style>
+.dash{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.dash .wide{grid-column:1/-1}
+.ch{margin:0;padding:18px;border:1px solid var(--line);border-radius:16px;background:#FFFFFF;display:flex;flex-direction:column;gap:10px}
+.ch figcaption{font-weight:800;font-size:15px}
+.ch svg{width:100%;height:auto;font-family:'Manrope',sans-serif}
+.lg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--text)}
+.lg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.stk{display:flex;height:34px;border-radius:8px;overflow:hidden;gap:2px}
+.br{display:grid;grid-template-columns:150px minmax(0,1fr) 78px;gap:10px;align-items:center;font-size:13px}
+.br div{height:14px;background:var(--soft);border-radius:4px}.br i{display:block;height:100%;background:#1F8A5B;border-radius:4px}
+.br b{text-align:right;font-variant-numeric:tabular-nums}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.tile{padding:16px;border-radius:14px;background:var(--ink);color:#FFFFFF;display:flex;flex-direction:column;gap:4px}
+.tile span{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;color:#7DD3A8}.tile b{font-size:22px;font-weight:800;letter-spacing:-.4px}.tile small{font-size:12px;color:#B7C6BC}
+@media (max-width:800px){.dash{grid-template-columns:minmax(0,1fr)}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.br{grid-template-columns:110px minmax(0,1fr) 70px}}
+</style><style>
+.rm-flag{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;background:#FBF3DF;border:1px solid #EEDCA8;font-size:13px;font-weight:700;color:#6B5310}
+.rm{display:flex;flex-direction:column;gap:30px;margin-top:22px;padding:36px;border:1px solid var(--line);border-radius:22px;background:#FFFFFF;box-shadow:0 30px 80px rgba(15,46,36,.08)}
+.rm h2{margin:0 0 8px;font-size:22px;font-weight:800;letter-spacing:-.4px}
+.rm p,.rm li{font-size:16px;line-height:1.7;color:var(--text)}
+.rm-head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.rm-head b{font-size:26px;font-weight:800;letter-spacing:-.6px}
+.rm-verd{padding:22px;border-radius:16px;background:var(--ink);color:#FFFFFF}
+.rm-verd .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:#7DD3A8}
+.rm-verd b{display:block;font-size:22px;margin:6px 0 8px}.rm-verd p{color:#D7E4DC;margin:0}
+.rm-notas{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.rm-notas div{padding:14px;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.rm-notas b{font-size:26px;font-weight:800}.rm-notas span{font-size:13px;line-height:1.4;color:var(--muted)}
+.rm-notas .g{background:#E7F4EC;border-color:#BFE0CB}.rm-notas .w{background:#FBF3DF;border-color:#EEDCA8}.rm-notas .r{background:#FBE9E7;border-color:#F0C6C0}
+.rm-tb{width:100%;border-collapse:collapse;font-size:14px}
+.rm-tb th,.rm-tb td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.rm-tb th:first-child,.rm-tb td:first-child{text-align:left;white-space:normal}
+.rm-tb th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.8px;color:var(--muted)}
+.rm-tb .neg{color:#B42318}
+.rm ol li{margin-bottom:10px}
+.rm-blur{position:relative}
+.rm-off{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:center;margin-top:36px;padding:30px;border-radius:20px;background:var(--ink);color:#FFFFFF}
+.rm-off h2{margin:0 0 8px;font-size:24px;font-weight:800;color:#FFFFFF}
+.rm-off p,.rm-off li{color:#D7E4DC;font-size:15px;line-height:1.65}
+.rm-off ul{margin:0;padding-left:18px}
+.rm-off .btns{display:flex;flex-direction:column;gap:10px}
+.rm-off a{display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:0 20px;border-radius:12px;font-weight:800;text-decoration:none}
+.rm-off a.g{background:#E3C77E;color:var(--ink)}.rm-off a.o{border:1px solid #3C5C50;color:#FFFFFF}
+@media (max-width:800px){.rm{padding:20px}.rm-notas{grid-template-columns:repeat(2,minmax(0,1fr))}.rm-off{grid-template-columns:minmax(0,1fr)}}
+</style><style>
+.es{display:flex;flex-direction:column;gap:32px;margin-top:22px;padding:36px;border:1px solid var(--line);border-radius:22px;background:#FFFFFF;box-shadow:0 30px 80px rgba(15,46,36,.08)}
+.es h2{margin:0 0 10px;font-size:22px;font-weight:800;letter-spacing:-.4px}
+.es p,.es li{font-size:16px;line-height:1.7;color:var(--text)}
+.es .rm-verd p{color:#D7E4DC}
+.es-2{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px;align-items:start}
+.es-map{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#F4F7F5}
+.es-map svg{display:block;width:100%;height:auto;font-family:'Manrope',sans-serif}
+.es-tb{width:100%;border-collapse:collapse;font-size:14px}
+.es-tb th,.es-tb td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.es-tb th{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.8px;color:var(--muted);white-space:nowrap}
+.es-tb td.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.st{font-weight:800}.st.g{color:#1F8A5B}.st.w{color:#9A7A1F}.st.r{color:#B42318}
+.es-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.es-c{padding:18px;border-radius:16px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.es-c .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--green)}
+.es-c b{font-size:24px;font-weight:800;letter-spacing:-.5px}.es-c span{font-size:14px;line-height:1.5;color:var(--muted)}
+.es-c.g{background:#E7F4EC;border-color:#BFE0CB}.es-c.w{background:#FBF3DF;border-color:#EEDCA8}.es-c.r{background:#FBE9E7;border-color:#F0C6C0}
+.es-voz{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.es-voz div{padding:18px;border-radius:16px}
+.es-voz h3{margin:0 0 8px;font-size:16px}
+.es-voz ul{margin:0;padding-left:18px}.es-voz li{font-size:15px;line-height:1.6}
+.es-ill{font-size:13px;color:var(--muted)}
+.ladder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:36px}
+.ladder div{padding:22px;border-radius:18px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px;background:#FFFFFF}
+.ladder .on{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.ladder .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--green)}.ladder .on .k{color:#7DD3A8}
+.ladder b{font-size:19px;font-weight:800}.ladder p{margin:0;font-size:14px;line-height:1.6;color:var(--text)}.ladder .on p{color:#D7E4DC}
+.ladder ul{margin:0;padding-left:18px;font-size:14px;line-height:1.6}.ladder .on li{color:#D7E4DC}
+.ladder a{margin-top:auto;display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:0 16px;border-radius:12px;font-weight:800;text-decoration:none;border:1px solid #CFD9D2;color:var(--ink)}
+.ladder .on a{background:#E3C77E;border-color:#E3C77E;color:var(--ink)}
+@media (max-width:860px){.es{padding:20px}.es-2,.es-voz,.ladder{grid-template-columns:minmax(0,1fr)}.es-cards{grid-template-columns:minmax(0,1fr)}.es-tb .hm{display:none}}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ink:#0F2E24;--green:#1F8A5B;--gold:#B8933F;--muted:#5C6B63;--text:#3A4A42;--line:#E2E9E4;--soft:#F7FAF8}
+*{box-sizing:border-box}html{background:#FFFFFF}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#FFFFFF;-webkit-font-smoothing:antialiased}
+a{color:var(--green)}a:hover{color:#156B46}
+.wrap{max-width:760px;margin:0 auto;padding:0 32px}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{max-width:1200px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand img{width:44px;height:44px;border-radius:9px;object-fit:cover}
+.brand b{font-weight:800;font-size:18px;letter-spacing:-.4px}
+.brand small{display:block;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.4px;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #CFD9D2;border-radius:10px;color:var(--ink);font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.btn.solid{background:var(--ink);border-color:var(--ink);color:#FFFFFF}.btn.solid:hover{color:#FFFFFF;background:#163F32}
+main{padding:64px 0 96px}
+.eyebrow{margin:0 0 14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.4px;color:var(--green);display:flex;gap:14px;flex-wrap:wrap}
+.eyebrow span+span{color:var(--muted)}
+h1{margin:0 0 18px;font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1.08;letter-spacing:-1.2px;text-wrap:balance}
+.by{display:flex;align-items:center;gap:12px;margin:0 0 40px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.by img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.by b{display:block;font-size:15px}.by small{font-size:13px;color:var(--muted)}
+article h2{margin:40px 0 12px;font-weight:800;font-size:22px;letter-spacing:-.4px;line-height:1.25}
+article p,article li{font-size:18px;line-height:1.75;color:var(--text)}
+article p{margin:0 0 18px}
+article ul{margin:0 0 20px;padding-left:22px}article li{margin-bottom:8px}
+article strong{color:var(--ink)}
+blockquote{margin:24px 0;padding:6px 0 6px 22px;border-left:3px solid var(--gold);font-size:20px;line-height:1.6;font-weight:600;color:var(--ink)}
+.orig{margin:36px 0 0;font-size:14px;color:var(--muted)}
+.cta{margin-top:48px;padding:30px;border-radius:20px;background:var(--ink);color:#FFFFFF}
+.cta h2{margin:0 0 8px;font-weight:800;font-size:22px;color:#FFFFFF}
+.cta p{margin:0 0 18px;font-size:16px;line-height:1.65;color:#C9D8CF}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap}
+.cta .btn{border-color:#3C5C50;color:#FFFFFF}.cta .btn.gold{background:#E3C77E;border-color:#E3C77E;color:var(--ink)}
+.more{margin-top:56px}
+.label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--muted);margin:0 0 6px}
+.list{border-top:1px solid var(--line)}
+.list a{display:flex;gap:18px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none}
+.list a:hover strong{color:var(--green)}
+.list time{flex:none;width:92px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A9A91}
+.list strong{display:block;font-size:17px;font-weight:700;line-height:1.4}
+.list span.r{display:block;margin-top:4px;font-size:14px;line-height:1.55;color:var(--muted)}
+.list i{font-style:normal;color:var(--green);font-weight:800}
+.lead{margin:0 0 36px;font-size:18px;line-height:1.7;color:var(--text)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.chips button{font:inherit;font-size:13px;font-weight:700;min-height:38px;padding:0 14px;border:1px solid #CFD9D2;border-radius:999px;background:#FFFFFF;color:var(--ink);cursor:pointer}
+.chips button.on{background:var(--ink);border-color:var(--ink);color:#FFFFFF}
+.rss{display:inline-flex;gap:8px;align-items:center;font-size:14px;font-weight:700;text-decoration:none}
+footer{padding:28px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer .wrap{max-width:1200px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--text)}
+@media (max-width:640px){.wrap{padding:0 16px}.brand small{display:none}main{padding:36px 0 72px}.hide-m{display:none}article p,article li{font-size:17px}.list a{flex-direction:column;gap:4px}.list i{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="/"><img src="/logo.jpg" alt="RVK Negócios"><span><b>RVK Negócios</b><small>GESTÃO · ESTRATÉGIA · M&amp;A</small></span></a>
+<nav><a class="btn hide-m" href="/artigos">Artigos</a><a class="btn hide-m" href="/ferramentas">Ferramentas</a><a class="btn solid" href="/diagnostico">Diagnóstico gratuito</a></nav>
+</div></header>
+<main><div class="wrap wide">
+<p class="eyebrow"><span><a href="/ferramentas" style="color:inherit;text-decoration:none">FERRAMENTAS GRATUITAS</a></span><span>MODELO</span></p>
+<h1>Estudo de viabilidade e localização: modelo</h1>
+<p class="lead">O estudo vai além do plano: olha o ponto escolhido, a concorrência em volta, o que os clientes da região elogiam e reclamam, o setor, os riscos, o time e o lançamento. Abaixo, um exemplo completo com uma cafeteria fictícia.</p>
+<span class="rm-flag">EXEMPLO FICTÍCIO · ENDEREÇO, CONCORRENTES, NOTAS E NÚMEROS ILUSTRATIVOS</span>
+<div class="es">
+<div class="rm-head"><div><span class="label">ESTUDO DE VIABILIDADE E LOCALIZAÇÃO · RVK NEGÓCIOS</span><br><b>Cafeteria com padaria artesanal</b><p style="margin:4px 0 0;color:var(--muted)">Rua das Acácias, 100 · bairro residencial com comércio de rua · raio analisado de 3 km</p></div>
+<div style="text-align:right"><span class="label">ELABORADO POR</span><p style="margin:4px 0 0">Time RVK Negócios</p></div></div>
+
+<div class="rm-verd"><span class="k">CONCLUSÃO</span><b>O ponto é bom, mas o formato precisa mudar para ganhar espaço.</b>
+<p>Há demanda e há concorrência forte no café especial. O espaço livre está em outra combinação: café de qualidade com preço médio, lugar para sentar e funcionamento até as 20h. Quatro dos oito concorrentes fecham antes das 18h e as reclamações mais frequentes são fila, falta de mesas e café fraco.</p></div>
+
+<section><h2>1. Concorrência num raio de 3 km</h2>
+<div class="es-2"><div class="es-map"><svg viewBox="0 0 520 520" role="img" aria-label="Mapa esquemático dos concorrentes num raio de 3 km"><rect width="520" height="520" fill="#F4F7F5"/><line x1="70" y1="0" x2="100" y2="520" stroke="#FFFFFF" stroke-width="5"/><line x1="150" y1="0" x2="180" y2="520" stroke="#FFFFFF" stroke-width="5"/><line x1="260" y1="0" x2="290" y2="520" stroke="#FFFFFF" stroke-width="9"/><line x1="360" y1="0" x2="390" y2="520" stroke="#FFFFFF" stroke-width="5"/><line x1="450" y1="0" x2="480" y2="520" stroke="#FFFFFF" stroke-width="5"/><line x1="0" y1="90" x2="520" y2="65" stroke="#FFFFFF" stroke-width="5"/><line x1="0" y1="180" x2="520" y2="155" stroke="#FFFFFF" stroke-width="5"/><line x1="0" y1="265" x2="520" y2="240" stroke="#FFFFFF" stroke-width="9"/><line x1="0" y1="350" x2="520" y2="325" stroke="#FFFFFF" stroke-width="5"/><line x1="0" y1="440" x2="520" y2="415" stroke="#FFFFFF" stroke-width="5"/><rect x="380" y="380" width="110" height="80" rx="10" fill="#DCEBE1"/><text x="435" y="425" text-anchor="middle" font-size="11" fill="#5C6B63">parque</text><circle cx="380" cy="110" r="9" fill="#FFFFFF" stroke="#0F2E24" stroke-width="2"/><text x="380" y="127" text-anchor="middle" font-size="11" fill="#3A4A42">metrô</text><circle cx="260" cy="260" r="230" fill="none" stroke="#1F8A5B" stroke-width="1.2" stroke-dasharray="5 5" opacity=".55"/><text x="264" y="44" font-size="11" fill="#1F8A5B">3 km</text><circle cx="260" cy="260" r="153" fill="none" stroke="#1F8A5B" stroke-width="1.2" stroke-dasharray="5 5" opacity=".55"/><text x="264" y="121" font-size="11" fill="#1F8A5B">2 km</text><circle cx="260" cy="260" r="77" fill="none" stroke="#1F8A5B" stroke-width="1.2" stroke-dasharray="5 5" opacity=".55"/><text x="264" y="197" font-size="11" fill="#1F8A5B">1 km</text><circle cx="283" cy="240" r="13" fill="#1F8A5B" stroke="#FFFFFF" stroke-width="2"/><text x="283" y="244" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">A</text><circle cx="210" cy="242" r="13" fill="#B42318" stroke="#FFFFFF" stroke-width="2"/><text x="210" y="246" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">B</text><circle cx="236" cy="325" r="13" fill="#B8933F" stroke="#FFFFFF" stroke-width="2"/><text x="236" y="329" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">C</text><circle cx="336" cy="324" r="13" fill="#1F8A5B" stroke="#FFFFFF" stroke-width="2"/><text x="336" y="328" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">D</text><circle cx="249" cy="138" r="13" fill="#B8933F" stroke="#FFFFFF" stroke-width="2"/><text x="249" y="142" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">E</text><circle cx="109" cy="315" r="13" fill="#B42318" stroke="#FFFFFF" stroke-width="2"/><text x="109" y="319" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">F</text><circle cx="438" cy="212" r="13" fill="#B8933F" stroke="#FFFFFF" stroke-width="2"/><text x="438" y="216" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">G</text><circle cx="297" cy="471" r="13" fill="#B8933F" stroke="#FFFFFF" stroke-width="2"/><text x="297" y="475" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">H</text><circle cx="260" cy="260" r="16" fill="#0F2E24" stroke="#E3C77E" stroke-width="3"/><text x="260" y="265" text-anchor="middle" font-size="14" font-weight="800" fill="#E3C77E">★</text><rect x="12" y="472" width="300" height="36" rx="8" fill="#FFFFFF" opacity=".95"/><circle cx="28" cy="490" r="6" fill="#1F8A5B"/><text x="38" y="494" font-size="11" fill="#3A4A42">4,5+</text><circle cx="80" cy="490" r="6" fill="#B8933F"/><text x="90" y="494" font-size="11" fill="#3A4A42">4,0 a 4,4</text><circle cx="160" cy="490" r="6" fill="#B42318"/><text x="170" y="494" font-size="11" fill="#3A4A42">abaixo de 4</text><text x="240" y="494" font-size="11" fill="#3A4A42">★ ponto</text></svg></div>
+<div class="es-cards" style="grid-template-columns:minmax(0,1fr)">
+<div class="es-c"><span class="k">CONCORRENTES DIRETOS</span><b>8</b><span>5 cafeterias, 2 padarias e 1 rede, todas a menos de 3 km</span></div>
+<div class="es-c g"><span class="k">NOTA MÉDIA NO GOOGLE</span><b>4,2</b><span>com 6.470 avaliações somadas; o cliente da região avalia e compara</span></div>
+<div class="es-c w"><span class="k">MAIS PRÓXIMO</span><b>400 m</b><span>Cafeteria A, nota 4,6: o concorrente a ser estudado de perto</span></div>
+</div></div>
+<div style="margin-top:16px"><div style="overflow-x:auto"><table class="es-tb"><thead><tr><th>CONCORRENTE</th><th>DISTÂNCIA</th><th>NOTA</th><th class="hm">AVALIAÇÕES</th><th class="hm">PREÇO</th><th>O QUE ELOGIAM</th><th>DO QUE RECLAMAM</th></tr></thead><tbody><tr><td><b>Cafeteria A</b></td><td class="n">0.4 km</td><td class="n"><span class="st g">4.6</span></td><td class="n hm">812</td><td class="hm">$$</td><td>café especial e atendimento</td><td>fila no almoço, poucas mesas</td></tr><tr><td><b>Cafeteria B</b></td><td class="n">0.7 km</td><td class="n"><span class="st r">3.9</span></td><td class="n hm">245</td><td class="hm">$</td><td>preço baixo</td><td>café fraco, ambiente barulhento</td></tr><tr><td><b>Padaria C</b></td><td class="n">0.9 km</td><td class="n"><span class="st w">4.2</span></td><td class="n hm">1.530</td><td class="hm">$</td><td>pão na chapa e variedade</td><td>café de máquina, demora no caixa</td></tr><tr><td><b>Cafeteria D</b></td><td class="n">1.3 km</td><td class="n"><span class="st g">4.8</span></td><td class="n hm">390</td><td class="hm">$$$</td><td>ambiente para trabalhar</td><td>preço alto, fecha cedo</td></tr><tr><td><b>Rede E</b></td><td class="n">1.6 km</td><td class="n"><span class="st w">4.0</span></td><td class="n hm">2.210</td><td class="hm">$$</td><td>marca conhecida</td><td>padronizado, atendimento frio</td></tr><tr><td><b>Cafeteria F</b></td><td class="n">2.1 km</td><td class="n"><span class="st r">3.6</span></td><td class="n hm">118</td><td class="hm">$</td><td>perto do metrô</td><td>limpeza e demora</td></tr><tr><td><b>Padaria G</b></td><td class="n">2.4 km</td><td class="n"><span class="st w">4.4</span></td><td class="n hm">960</td><td class="hm">$$</td><td>doces artesanais</td><td>sem espaço para sentar</td></tr><tr><td><b>Cafeteria H</b></td><td class="n">2.8 km</td><td class="n"><span class="st w">4.1</span></td><td class="n hm">205</td><td class="hm">$$</td><td>brunch de fim de semana</td><td>fechada à noite</td></tr></tbody></table></div></div></section>
+
+<section><h2>2. O que os clientes da região dizem</h2>
+<p>Leitura das avaliações públicas dos concorrentes, agrupadas por tema.</p>
+<div class="es-voz">
+<div style="background:#E7F4EC"><h3>O que valorizam</h3><ul><li>Café bem tirado e grão de qualidade</li><li>Pão e doces feitos no local</li><li>Lugar tranquilo para trabalhar ou conversar</li><li>Atendimento que reconhece o cliente</li></ul></div>
+<div style="background:#FBE9E7"><h3>Do que reclamam</h3><ul><li>Fila e demora no horário de almoço</li><li>Poucas mesas e falta de tomada</li><li>Lojas que fecham cedo, antes das 18h</li><li>Preço alto no café especial</li></ul></div>
+</div></section>
+
+<section><h2>3. Oportunidades</h2>
+<ol>
+<li><b>Horário estendido até as 20h.</b> Metade dos concorrentes fecha antes das 18h, e o bairro tem fluxo de volta para casa vindo do metrô.</li>
+<li><b>Café especial com preço médio.</b> A única cafeteria com nota acima de 4,5 cobra caro; as baratas têm nota abaixo de 4.</li>
+<li><b>Espaço para sentar e trabalhar.</b> É a reclamação mais repetida e a mais fácil de resolver no projeto do salão.</li>
+<li><b>Encomendas de padaria para o bairro.</b> Bolos e cestas de café da manhã por WhatsApp, com retirada ou entrega no raio de 2 km.</li>
+</ol></section>
+
+<section><h2>4. A região e o setor</h2>
+<div class="es-cards">
+<div class="es-c"><span class="k">POPULAÇÃO NO RAIO</span><b>~120 mil</b><span>moradores em 3 km, perfil de classe média</span></div>
+<div class="es-c"><span class="k">FATURAMENTO DE REFERÊNCIA</span><b>R$ 60 a 110 mil</b><span>por mês, para cafeterias do porte previsto na região</span></div>
+<div class="es-c"><span class="k">TÍQUETE MÉDIO DA REGIÃO</span><b>R$ 28 a 42</b><span>por pessoa; acima de R$ 45 a percepção é de caro</span></div>
+</div>
+<p class="es-ill">No estudo real, esses números vêm de fontes públicas (Censo do IBGE por setor censitário, dados setoriais e de mercado) e do levantamento de campo, sempre com a fonte indicada.</p></section>
+
+<section><h2>5. Riscos</h2>
+<ul>
+<li><b>Concorrente forte a 400 m.</b> A Cafeteria A tem fila; se abrir uma segunda loja ou ampliar, ocupa o espaço da oportunidade.</li>
+<li><b>Sazonalidade.</b> Em janeiro e julho o movimento do bairro cai; o caixa precisa estar preparado.</li>
+<li><b>Dependência do fluxo do metrô.</b> Obras ou mudança de saída podem desviar o público da noite.</li>
+<li><b>Custo de pessoal.</b> O horário estendido exige dois turnos; o plano precisa provar que a venda noturna paga o segundo turno.</li>
+</ul></section>
+
+<section><h2>6. Time ideal e remuneração de referência</h2>
+<div style="overflow-x:auto"><table class="es-tb"><thead><tr><th>FUNÇÃO</th><th>PERFIL</th><th>REFERÊNCIA MENSAL</th></tr></thead><tbody>
+<tr><td><b>Barista líder</b></td><td>experiência com café especial, treina o time e cuida do padrão</td><td class="n">R$ 3.200 a 3.800</td></tr>
+<tr><td><b>Atendente de salão</b></td><td>agilidade no pico, simpatia, memória para clientes frequentes</td><td class="n">R$ 2.100 a 2.500</td></tr>
+<tr><td><b>Confeiteiro(a)</b></td><td>produção da manhã, controle de desperdício</td><td class="n">R$ 2.800 a 3.300</td></tr>
+<tr><td><b>Pró-labore do sócio operador</b></td><td>presente no salão nos seis primeiros meses</td><td class="n">R$ 6.000 a 8.000</td></tr>
+</tbody></table></div>
+<p class="es-ill">Valores de salário sem encargos. No estudo real, a referência vem de pesquisas salariais e anúncios de vagas da região.</p></section>
+
+<section><h2>7. Dificuldades dos primeiros seis meses</h2>
+<ul>
+<li>Formar clientela fiel antes que a curiosidade da inauguração passe (normalmente no segundo mês).</li>
+<li>Acertar a produção da padaria: sobra vira perda, falta vira cliente perdido.</li>
+<li>Segurar o padrão do café com equipe nova e rotatividade alta no setor.</li>
+<li>Equilibrar o caixa no período em que a venda ainda não paga a estrutura.</li>
+</ul></section>
+
+<section><h2>8. Lançamento e marketing</h2>
+<div class="es-cards">
+<div class="es-c"><span class="k">ANTES DE ABRIR</span><b>30 dias</b><span>Perfil da Empresa no Google com fotos e horário, Instagram com a obra e a equipe, lista de espera no WhatsApp</span></div>
+<div class="es-c"><span class="k">INAUGURAÇÃO</span><b>2 semanas</b><span>degustação para moradores, parceria com o condomínio e o comércio vizinho, convite a perfis locais do bairro</span></div>
+<div class="es-c"><span class="k">ROTINA</span><b>R$ 2.500/mês</b><span>anúncios no Google e Instagram num raio de 2 km, programa de fidelidade e pedido de avaliação no Google</span></div>
+</div>
+<p>Meta para o 3º mês: 150 avaliações no Google com nota acima de 4,5, para aparecer à frente dos concorrentes nas buscas por "cafeteria perto de mim". Site de uma página com cardápio, horário e encomendas.</p></section>
+
+<section><h2>9. Próximos passos</h2>
+<ol><li>Validar o fluxo do ponto em três horários e dois dias da semana.</li><li>Ajustar o plano de negócios para o formato com horário estendido.</li><li>Negociar o aluguel com base no faturamento de referência da região.</li><li>Rodar o plano de lançamento a partir de 30 dias antes da abertura.</li></ol></section>
+</div>
+
+<div class="ladder">
+<div><span class="k">GRATUITO</span><b>Plano de negócios guiado</b><p>Resumo com investimento, ponto de equilíbrio, retorno e pontos de atenção.</p><a href="/ferramentas/plano-de-negocios">Montar meu plano</a></div>
+<div><span class="k">AVALIAÇÃO DO PLANO</span><b>Plano completo e relatório</b><p>Dois encontros online de 2 horas com um consultor, painel de gráficos, cenários e recomendações.</p><a href="/ferramentas/relatorio-modelo-plano">Ver o modelo</a></div>
+<div class="on"><span class="k">ESTUDO DE VIABILIDADE</span><b>Plano + ponto + mercado</b><p>Tudo da avaliação, mais concorrência no raio, voz do cliente, setor, riscos, time ideal e plano de lançamento.</p>
+<a href="https://wa.me/5511976564498?text=Ol%C3%A1%2C%20quero%20um%20estudo%20de%20viabilidade%20e%20localiza%C3%A7%C3%A3o%20com%20a%20RVK." target="_blank" rel="noopener">Quero o estudo</a></div>
+</div>
+<div class="cta">
+<h2>Os números apontam um problema. E agora?</h2>
+<p>O diagnóstico da RVK leva cerca de 5 minutos e devolve uma nota em seis dimensões, com as prioridades de investigação. Se preferir, a conversa com o nosso time é reservada.</p>
+<div class="row"><a class="btn gold" href="/diagnostico">Fazer o diagnóstico</a><a class="btn" href="https://wa.me/5511976564498?text=Ol%C3%A1%2C%20vim%20pelas%20ferramentas%20do%20site%20da%20RVK%20Neg%C3%B3cios." target="_blank" rel="noopener">Falar no WhatsApp</a></div>
+</div>
+<div class="bol">
+<p class="label">BOLETIM RVK</p>
+<h2>Receba o Boletim RVK no seu e-mail</h2>
+<p>Uma leitura curta, de segunda a sexta, sobre gestão, reestruturação, varejo e IA. Às sextas, edição cultural.</p>
+<form class="bolf" onsubmit="return rvkBoletim(this)">
+<input type="email" name="email" required placeholder="seu@email.com.br" aria-label="E-mail">
+<button type="submit">Quero receber</button>
+</form>
+<small class="bolmsg" role="status"></small>
+<small>Ao assinar, você concorda com a <a href="/privacidade">política de privacidade</a>.</small>
+</div>
+<script>
+var RVK_LEADS='https://script.google.com/macros/s/AKfycbxh43V1rMmgVoDG_1iEIYLKpCE3anHps9x9QYbntiOEhUy16ugD6fmX1QD63Z4B05e2/exec';
+function rvkLead(p){try{p.pagina=location.href.split('?')[0];fetch(RVK_LEADS,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(p),keepalive:true})}catch(e){}}
+function rvkBoletim(f){var e=f.email.value.trim();var m=f.parentNode.querySelector('.bolmsg');if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){m.textContent='Confira o e-mail.';return false}rvkLead({origem:'Boletim',email:e});f.reset();m.textContent='Pronto. Você vai receber o próximo Boletim RVK no seu e-mail.';return false}
+</script>
+<section class="more"><p class="label">OUTRAS FERRAMENTAS</p><div class="cards"><a class="card" href="/ferramentas/curva-abc"><span class="tg">RAIO-X · NOVO</span><b>Curva ABC de venda × margem</b><span class="d">Cole a lista de produtos e veja quais vendem muito e ganham pouco, e quais sustentam o lucro.</span><span class="go">Abrir →</span></a><a class="card" href="/ferramentas/plano-de-negocios"><span class="tg">PLANO GUIADO · NOVO</span><b>Plano de negócios guiado</b><span class="d">Oito etapas com perguntas objetivas, até a DRE projetada de três anos, o ponto de equilíbrio e os pontos de atenção.</span><span class="go">Abrir →</span></a><a class="card" href="/ferramentas/estoque"><span class="tg">CALCULADORA</span><b>Quanto caixa está preso no seu estoque?</b><span class="d">Informe o faturamento e os dias de estoque que dá para cortar. Veja o caixa que volta para a empresa.</span><span class="go">Abrir →</span></a><a class="card" href="/ferramentas/ciclo-financeiro"><span class="tg">CALCULADORA</span><b>Ciclo financeiro e capital de giro</b><span class="d">Quantos dias o dinheiro fica preso entre pagar o fornecedor e receber do cliente, e quanto capital isso exige.</span><span class="go">Abrir →</span></a></div></section>
+</div></main>
+<footer><div class="wrap">
+<span>RVK Negócios é marca de Ravick Gestão Empresarial Ltda. · CNPJ 15.224.203/0001-39 · fundada em 2012 · São Paulo</span>
+<span><a href="/artigos/feed.xml">RSS</a> · <a href="/privacidade">Privacidade</a> · <a href="/">Voltar ao site</a></span>
+</div></footer>
+</body>
+</html>
